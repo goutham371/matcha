@@ -257,7 +257,7 @@ func generateFeedItems(feed *gofeed.Feed, rss RSS) string {
 
 // Writes the feed and its items to the markdown file
 func writeFeedToMarkdown(feed *gofeed.Feed, items string) {
-	writeToMarkdown(fmt.Sprintf("\n### %s  %s\n%s", favicon(feed), feed.Title, items))
+	writeToMarkdown(fmt.Sprintf("\n### %s  %s\n%s", feed.Title, favicon(feed), items))
 }
 
 // Returns the title and link for the given feed item
