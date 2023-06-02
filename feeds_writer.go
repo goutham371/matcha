@@ -46,7 +46,7 @@ func writeLink(title string, url string, newline bool, readingTime string) strin
 	if terminal_mode {
 		content = termlink.Link(title, url)
 	} else {
-		content = "[" + title + "](" + url + ")"
+		content = " - [ ]" + "[" + title + "](" + url + ")"
 	}
 	if readingTime != "" {
 		content += " (" + readingTime + ")"
